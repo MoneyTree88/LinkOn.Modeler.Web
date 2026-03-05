@@ -1,0 +1,204 @@
+/* Shared tree & splitter layout */
+.message-editor.split {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  height: 70vh;
+  min-height: 420px;
+}
+
+.message-editor.split > .message-list,
+.message-editor.split > .msg-form {
+  min-width: 0;
+  min-height: 0;
+}
+
+.message-editor.split > .gutter.gutter-horizontal {
+  width: 6px;
+  min-width: 6px;
+  cursor: col-resize;
+  background: #cbd5e1;
+  border-radius: 999px;
+  margin: 0 2px;
+}
+
+.message-list {
+  overflow: auto;
+  height: 100%;
+  padding: 8px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.msg-form {
+  height: 100%;
+  padding: 8px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+.tree {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tree-node {
+  line-height: 1.4;
+}
+
+.tree-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tree-label.active {
+  background: #e0e7ff;
+}
+
+.tree-toggle {
+  width: 14px;
+  color: #6b7280;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  line-height: 1;
+}
+
+.tree-toggle.spacer {
+  visibility: hidden;
+}
+
+.tree-children {
+  margin-top: 2px;
+  margin-left: 0;
+}
+
+.node-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.tag {
+  font-weight: 600;
+}
+
+.prop-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.prop-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.prop-row label {
+  font-size: 13px;
+  color: #374151;
+}
+
+.prop-row input[type='text'],
+.prop-row input:not([type='checkbox']),
+.prop-row select {
+  padding: 6px 8px;
+  border: 1px solid #dbe4ef;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.prop-row input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+}
+
+.prop-empty {
+  color: #6b7280;
+}
+
+/* Flow diagram styles (used by FlowEditor as well) */
+.flow-diagram {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 10px;
+  background: #f8fafc;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.flow-diagram-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.flow-diagram-actions {
+  margin-left: auto;
+}
+
+.flow-diagram-canvas {
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 8px 8px 20px 8px;
+  box-sizing: border-box;
+}
+
+.flow-diagram-title {
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #0f172a;
+  padding-left: 2px;
+}
+
+.flow-diagram-empty {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.flow-node-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.flow-node-label img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.flow-node-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.flow-node-title {
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.2;
+  white-space: nowrap;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+.flow-form {
+  overflow: hidden;
+}

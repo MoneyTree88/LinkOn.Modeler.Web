@@ -1,0 +1,71 @@
+.prop-grid {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+  overflow: auto;
+  flex: 1 1 auto;
+  min-height: 200px;
+  max-height: 100%;
+}
+
+.prop-grid-title {
+  background: linear-gradient(180deg, #f8fbff 0%, #e8eff8 100%);
+  padding: 8px 10px;
+  font-weight: 700;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.prop-grid table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.prop-grid th {
+  width: 40%;
+  text-align: left;
+  background: #f8fafc;
+  padding: 4px 8px;
+  border-bottom: 1px solid #e2e8f0;
+  border-right: 1px solid #e2e8f0;
+  font-weight: 600;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
+.prop-grid td {
+  padding: 4px 8px;
+  border-bottom: 1px solid #e2e8f0;
+  line-height: 1.2;
+}
+
+.prop-grid input,
+.prop-grid select {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 4px 6px;
+  line-height: 1.2;
+  height: 28px;
+  box-sizing: border-box;
+}
+
+.prop-grid .precon-cell {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.prop-grid .precon-cell input {
+  flex: 1 1 auto;
+  cursor: pointer;
+}
+
+.prop-grid .precon-cell button {
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #eef2f7;
+  padding: 4px 8px;
+  cursor: pointer;
+  white-space: nowrap;
+}
